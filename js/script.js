@@ -1,0 +1,19 @@
+/*Hove navbar*/
+document.querySelectorAll('.nav-item.dropdown').forEach(function(element) {
+    element.addEventListener('mouseover', function() {
+        this.querySelector('.dropdown-menu').classList.add('show');
+    });
+
+    element.addEventListener('mouseout', function() {
+        this.querySelector('.dropdown-menu').classList.remove('show');
+    });
+});
+//Dropdown
+function toggleDropdown(link) {
+    var dropdownMenu = link.nextElementSibling;
+    if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.style.display = "block";
+    }
+}
