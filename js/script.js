@@ -17,3 +17,13 @@ function toggleDropdown(link) {
         dropdownMenu.style.display = "block";
     }
 }
+
+// Close dropdown
+document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+    });
+});

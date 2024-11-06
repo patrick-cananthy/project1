@@ -10,8 +10,10 @@
     text-transform: capitalize;
 }
 
-body {
+body,
+html {
     background: #f1fbff;
+    min-height: 100%;
 }
 
 
@@ -74,8 +76,8 @@ body {
         z-index: 2;
     }
     .carousel-item img {
-        height: 100vh;
-        min-height: 300px;
+        height: auto;
+        max-height: 600px;
         object-fit: cover;
     }
     /* Rearrange caption elements */
