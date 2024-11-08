@@ -62,6 +62,22 @@ html {
     border-radius: 5px;
 }
 
+.contact {
+    background-image: url(../images/carousel/faq-vec2.png);
+    background-repeat: repeat-y;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    max-height: 50%;
+}
+
+.aboutUs {
+    background-image: url(../images/carousel/foo-vec.png);
+    background-repeat: repeat-y;
+    background-position-x: right;
+    padding: 1%;
+    font-weight: 500;
+}
+
 
 /* Center captions and adjust layout on larger screens */
 
@@ -102,5 +118,8 @@ html {
     }
     .navbar-collapse {
         text-align: right;
+    }
+    .contact {
+        max-height: 50%;
     }
 }
