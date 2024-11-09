@@ -72,10 +72,45 @@ html {
 
 .aboutUs {
     background-image: url(../images/carousel/foo-vec.png);
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
     background-position-x: right;
-    padding: 1%;
+    padding: 3% 3%;
     font-weight: 500;
+}
+
+.Services {
+    padding: 2%;
+}
+
+
+/* Increase shadow on hover */
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    /* Lift the card slightly on hover */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Smooth transition for shadow */
+
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    transform: translateY(-10px);
+    /* Lift the card slightly on hover */
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+
+/* Smooth transition for shadow */
+
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 
