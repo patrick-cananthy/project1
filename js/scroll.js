@@ -1,7 +1,7 @@
 // Scroll Animation
 document.addEventListener("DOMContentLoaded", function() {
   
-  const sections = document.querySelectorAll(".about-header, .governance-overview, .organizational-structure, .leadership-team");
+  const sections = document.querySelectorAll(".about-header, .governance-overview, .organizational-structure, .leadership-team, .history-overview, .timeline, .legacy, .management-card, .about-overview, .our-values, .our-mission");
 
 
   function checkInView() {
