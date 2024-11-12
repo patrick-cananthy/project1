@@ -49,17 +49,90 @@ html {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
-    /* Add shadow for better readability */
 }
-
-
-/* Optional: Padding for captions */
 
 .carousel-caption h5,
 .carousel-caption p {
     /* Background color for captions */
     display: inline-block;
     padding: 10px;
+}
+
+
+/* Footer*/
+
+
+/*Footer Style*/
+
+.footer {
+    background-color: black;
+    padding: 70px 0;
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: sticky;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li i {
+    float: left;
+    margin-right: 10px;
+    font-size: larger;
+    color: #e91e63;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
 }
 
 
@@ -93,6 +166,7 @@ html {
 /* Services style*/
 
 .contact .card,
+.leader,
 .service-card {
     text-align: center;
     padding: 20px;
@@ -104,6 +178,7 @@ html {
 }
 
 .service-card:hover,
+.leader:hover,
 .contact .card:hover {
     transform: translateY(-5px);
 }
