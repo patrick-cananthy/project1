@@ -20,14 +20,15 @@
         visibility: visible;
         opacity: 1;
     }
+    /*Nested Dropdown*/
 </style>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Our General Hospital</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -46,7 +47,14 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Generalized Services</a></li>
-                        <li><a class="dropdown-item" href="#">Specialized Services</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Specialized Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                                <li><a class="dropdown-item" href="#">Neurology</a></li>
+                                <li><a class="dropdown-item" href="#">Orthopedics</a></li>
+                            </ul>
+                        </li>
                         <li><a class="dropdown-item" href="#">Diagnostic Services</a></li>
                     </ul>
                 </li>
@@ -85,6 +93,34 @@
                 dropdown.addEventListener('mouseleave', function() {
                     let menu = this.querySelector('.dropdown-menu');
                     menu.classList.remove('show');
+                });
+            });
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Apply hover effect for screens larger than 768px
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.navbar .dropdown').forEach(function(dropdown) {
+                dropdown.addEventListener('mouseenter', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    menu.classList.add('show');
+                });
+                dropdown.addEventListener('mouseleave', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    menu.classList.remove('show');
+                });
+            });
+
+            // Apply hover effect for nested dropdown
+            document.querySelectorAll('.dropdown-submenu').forEach(function(submenu) {
+                submenu.addEventListener('mouseenter', function() {
+                    let subMenu = this.querySelector('.dropdown-menu');
+                    subMenu.classList.add('show');
+                });
+                submenu.addEventListener('mouseleave', function() {
+                    let subMenu = this.querySelector('.dropdown-menu');
+                    subMenu.classList.remove('show');
                 });
             });
         }
