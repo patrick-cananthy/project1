@@ -39,3 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => document.getElementById("foot").innerHTML = data);
 });
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("../include/slider.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("slider").innerHTML = data);
+});
