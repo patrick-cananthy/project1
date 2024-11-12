@@ -240,6 +240,10 @@ ul {
     .navbar-collapse {
         text-align: right;
     }
+    .footer-col {
+        width: 60%;
+        margin-bottom: 30px;
+    }
 }
 
 .aboutUs {
