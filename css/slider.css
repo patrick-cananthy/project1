@@ -41,30 +41,6 @@
 }
 
 
-/* Overlay Text Styling */
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent background */
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slidee:hover .overlay {
-    opacity: 1;
-}
-
-
 /* Gradient Shadow for Slider */
 
 .slider::before,
