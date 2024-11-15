@@ -1,17 +1,26 @@
 /* Scroll Effect */
+
 .about-header,
 .governance-overview,
 .organizational-structure,
 .leadership-team,
 .history-overview,
 .timeline,
-.legacy, .management-card, .about-overview, .our-values, .our-mission {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.legacy,
+.management-card,
+.about-overview,
+.our-values,
+.our-mission,
+.contact,
+.aboutUs,
+.Services,
+.latest-news {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }

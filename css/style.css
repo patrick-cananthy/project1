@@ -56,12 +56,7 @@
     
     .footer {
         background-color: black;
-        padding: 70px 0;
-    }
-    
-    .footer .container {
-        max-width: 1170px;
-        margin: auto;
+        padding: 10px 0;
     }
     
     .footer .row {

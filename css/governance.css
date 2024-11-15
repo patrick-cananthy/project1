@@ -1,218 +1,217 @@
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none !important;
-  text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
 }
 
 body {
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 .about-header {
-  text-align: center;
-  padding: 10px;
-  color: rgb(49, 46, 46);
+    text-align: center;
+    padding: 10px;
+    color: rgb(49, 46, 46);
 }
 
 .about-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .about-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
+
 /* Governance Overview Section */
+
 .governance-overview {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  gap: 20px;
-  background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: #ffffff;
 }
 
 .governance-content {
-  flex: 1;
+    flex: 1;
 }
 
 .governance-image {
-  flex: 1;
+    flex: 1;
 }
 
 .governance-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
+
 /* Organizational Structure Section */
+
 .organizational-structure {
-  padding: 40px 20px;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 .organizational-structure h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #00509e;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00509e;
 }
 
 .structure-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .role {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 250px;
-  text-align: center;
-  background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
 .top-level {
-  border-color: #00509e;
+    border-color: #00509e;
 }
 
 .middle-level-container,
 .lower-level-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .middle-level .role,
 .lower-level .role {
-  border-color: #009688;
+    border-color: #009688;
 }
 
 .role h3 {
-  font-size: 1.3em;
-  margin-bottom: 8px;
-  color: #333;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: #333;
 }
 
+
 /* Connecting Lines */
+
 .middle-level-container::before,
 .lower-level-container::before {
-  content: '';
-  display: block;
-  width: 80%;
-  height: 2px;
-  background-color: #ddd;
-  position: absolute;
-  top: -20px;
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    position: absolute;
+    top: -20px;
 }
 
 .middle-level-container {
-  position: relative;
+    position: relative;
 }
 
 .lower-level-container {
-  position: relative;
+    position: relative;
 }
 
 .lower-level-container::before {
-  width: 90%;
+    width: 90%;
 }
-
 
 @media (max-width: 480px) {
-
-  .middle-level-container,
-  .lower-level-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .organizational-structure h2 {
-    font-size: 1.6em;
-  }
-
-  .role {
-    max-width: 100%;
-  }
+    .middle-level-container,
+    .lower-level-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .organizational-structure h2 {
+        font-size: 1.6em;
+    }
+    .role {
+        max-width: 100%;
+    }
 }
 
+
 /* Leadership Team Section */
+
 .leadership-team {
-  padding: 40px 20px;
-  text-align: center;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .leadership-team h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .leader-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .leader {
-  flex: 1 1 300px;
-  max-width: 300px;
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .leader img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .leader h3 {
-  color: #00509e;
-  font-size: 1.4em;
-  margin: 10px 0;
+    color: #00509e;
+    font-size: 1.1em;
+    margin: 10px 0;
 }
-
 
 @media (max-width: 480px) {
-  .leader-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .leader-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-
-
-
 @media (max-width: 768px) {
-  .governance-overview {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-header h1 {
-    font-size: 2em;
-  }
-
-  .about-header p {
-    font-size: 1em;
-  }
+    .governance-overview {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-header h1 {
+        font-size: 2em;
+    }
+    .about-header p {
+        font-size: 1em;
+    }
 }
