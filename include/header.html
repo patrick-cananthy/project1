@@ -1,92 +1,176 @@
 <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
 <style>
-    /* Display dropdown on hover */
+    .dropdown-menu .dropdown-menu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: 0.1rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s, opacity 0.2s ease-in-out;
+    }
+    
+    .dropdown:hover>.dropdown-menu {
+        opacity: 1;
+    }
     
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
     }
-    /* Smooth transition effect */
     
     .navbar-nav .dropdown-menu {
         transition: opacity 0.3s ease;
-        opacity: 0;
         visibility: hidden;
     }
     
     .navbar-nav .dropdown:hover .dropdown-menu {
         visibility: visible;
-        opacity: 1;
     }
 </style>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../html/index.html">Our <strong class="one">General</strong> <strong class="two"> Hospital</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <a class="navbar-brand" href="../html/index.html">
+            <img src="../images/logo3.png" alt="Tema General Hospital logo" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../html/index.html" style="color: rgb(4, 0, 255);">Home</a>
+                    <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../html/about-overview.html">Overview of Our Hospital</a></li>
-                        <li><a class="dropdown-item" href="../html/history.html">History and Background</a></li>
+                        <li><a class="dropdown-item" href="../html/about-overview.html">Overview of TGH</a></li>
+                        <li><a class="dropdown-item" href="../html/history.html">History & BAckground</a></li>
                         <li><a class="dropdown-item" href="../html/governance.html">Governance Structure</a></li>
-                        <li><a class="dropdown-item" href="../html/management.html">Senior Management</a></li>
+                        <li><a class="dropdown-item" href="../html/management.html">Senior Management Team</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Generalized Services</a></li>
-                        <li><a class="dropdown-item" href="../specialized/Anaesthesia.html">Specialized Services</a></li>
-                        <li><a class="dropdown-item" href="../diagnostic/xRay.html">Diagnostic Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                General Care Services
+                            </a>
+                            <ul class="dropdown-menu sub-menu-right">
+                                <li><a class="dropdown-item" href="../generalized/OPD.html">Out Patient Department (OPD)</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Family Planning.html">Family Planning</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Child Welfare.html">Child Welfare</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Herbal Clinic.html">Herbal Clinic</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Physiotherapy.html">Physiotherapy</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Diet & Nutrition.html">Diet & Nutrition</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Clinical Pschology.html">Clinical Psychology</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Public health.html">Public Health</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Coporate Medical.html">Corporate Medical</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Diseases Control Surveilleance.html">Diseases Control/ Surveilleance</a></li>
+                                <li><a class="dropdown-item" href="../generalized/pharmaceutical services.html">Pharmaceutical Services</a></li>
+                                <li><a class="dropdown-item" href="../generalized/Mortuary.html">Mortuary</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Specialized Services
+                            </a>
+                            <ul class="dropdown-menu sub-menu-right">
+                                <li><a class="dropdown-item" href="../specialized/ENT.html">ENT</a></li>
+                                <li><a class="dropdown-item" href="../specialized/OBS&GYANE.html">OBS & Gynae</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Dermaetology.html">Dermaetology(Skin)</a></li>
+                                <li><a class="dropdown-item" href="../specialized/ART.html">ART</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Chest.html">Chest</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Chemotherapy.html">Chemotherapy</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Diabetic.html">Diabetic</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Hypertension.html">Hypertension</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Sickle-Cell.html">Sickle Cell</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Dietetic.html">Dietetic</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Geriatric.html">Geriatric</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Herbal.html">Herbal</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Wellness.html">Wellness</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Orthopaedic.html">Orthopaedic</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Asthma.html">Asthma</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Anaesthesia.html">Anaesthesia</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Urology.html">Urology</a></li>
+                                <li><a class="dropdown-item" href="../specialized/Dialysis.html">Dialysis</a></li>
+                                <li><a class="dropdown-item" href="../specialized/NICU.html">NICU</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Diagnostic Services
+                            </a>
+                            <ul class="dropdown-menu sub-menu-right">
+                                <li><a class="dropdown-item" href="../diagnostic/xRay.html">X-RAY</a></li>
+                                <li><a class="dropdown-item" href="../diagnostic/Ultrasound.html">Ultrsound Scan</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../diagnostic/lab.html">Laboratory Services</a></li>
+                                <li><a class="dropdown-item" href="../diagnostic/endoscopy.html">Endoscopy Services</a></li>
+
+                                <li><a class="dropdown-item" href="../diagnostic/ecg.html">Electrocardiogram (E.C.G)</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Media Center</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Media Center
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Our News</a></li>
-                        <li><a class="dropdown-item" href="#">Blog</a></li>
-                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="">TGH News</a></li>
+                        <li><a class="dropdown-item" href="">Blog</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Press Release</a></li>
+                        <li><a class="dropdown-item" href="">FAQ</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Corporate Insurance</a>
+                    <a class="nav-link" href="">Corporate Insurance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="">Contact Us</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
 <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Only apply hover effect for screens larger than 768px
-        if (window.innerWidth > 768) {
-            document.querySelectorAll('.navbar .dropdown').forEach(function(dropdown) {
-                dropdown.addEventListener('mouseenter', function() {
-                    let menu = this.querySelector('.dropdown-menu');
-                    menu.classList.add('show');
-                });
-                dropdown.addEventListener('mouseleave', function() {
-                    let menu = this.querySelector('.dropdown-menu');
-                    menu.classList.remove('show');
-                });
+    document.addEventListener('DOMContentLoaded', () => {
+        const dropdowns = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
+
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const subMenu = dropdown.nextElementSibling;
+                if (subMenu && subMenu.classList.contains('dropdown-menu')) {
+                    subMenu.classList.toggle('show');
+                }
             });
-        }
+        });
+
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.dropdown-menu .dropdown-menu').forEach(subMenu => {
+                subMenu.classList.remove('show');
+            });
+        });
     });
 </script>
