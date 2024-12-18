@@ -91,19 +91,24 @@ body {
 }
 
 .top-level {
+    border: solid 2px;
     border-color: #00509e;
 }
 
 .middle-level-container,
 .lower-level-container {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
 }
 
-.middle-level .role,
-.lower-level .role {
-    border-color: #009688;
+.middle-level-container .role {
+    border: solid 2px;
+    border-color: grey;
+}
+
+.lower-level-container .role {
+    border: solid 2px;
 }
 
 .role h3 {

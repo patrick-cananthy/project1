@@ -44,3 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => document.getElementById("slider").innerHTML = data);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("../include/headerr.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+});

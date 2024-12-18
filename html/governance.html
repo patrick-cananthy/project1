@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="../css/governance.css">
     <link rel="icon" href="../images/carousel/faq-vec2.png">
     <link rel="stylesheet" href="../css/scroll.css">
+    <style>
+        .governance-overview img {
+            margin-top: 5%;
+        }
+        
+        .cont {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +27,7 @@
     <!--Navbar-->
     <div id="navbar"></div>
     <section class="about-header">
-        <h1>Governance & Structure</h1>
+        <h1 style="color:#00509e">Governance & Structure</h1>
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../html/index.html">Home</a></li>
@@ -25,17 +35,36 @@
             </ol>
         </nav>
     </section>
-
     <section class="governance-overview">
+
+        <div class="governance-image">
+            <img style="width: 100%;" src="../images/boardmeeting.jpg" alt="Image of hospital board meeting">
+        </div>
         <div class="governance-content">
-            <h2>Our Governance Model</h2>
-            <p>
-                [Hospital Name] operates under a comprehensive governance model led by a Board of Directors committed to upholding the highest standards of healthcare. Our board consists of dedicated community leaders, healthcare professionals, and experts in finance,
-                ethics, and patient care, ensuring well-rounded oversight and strategic direction.
+
+            <p>The Governance Structure <abbr title="Tema General Hospital">TGH</abbr> showcases a clear hierarchy and distribution of responsibilities across various departments and roles. At the top of the chart is the <strong>Medical Director</strong>,
+                who serves as the Chief Executive Officer. The Medical Director is responsible for overseeing all operations and activities within the hospital, ensuring that the hospital runs efficiently and effectively to provide high-quality healthcare
+                services. <br> Reporting directly to the Medical Director is the <strong>Internal Audit</strong> function. This unit is tasked with ensuring compliance with internal controls, policies, and regulations. The Internal Audit team conducts
+                audits to safeguard the hospital’s integrity and accountability, ensuring that all operations adhere to established standards and procedures. <br> The <strong>Human Resource Management</strong> department also reports to the Medical Director.
+                This department is crucial for managing staff recruitment, training, and overall human resource policies. By ensuring a well-functioning and motivated workforce, the Human Resource Management department supports the hospital’s mission
+                and goals.The <strong>Hospital Administrator</strong>, also referred to as the Head of Hospital Administration and Support Services (HASS), oversees several operational departments. These include Estates, which manages hospital properties
+                and facilities,and Transport, which handles the logistics and transportation needs. Procurement & Stores is responsible for acquiring and storing supplies, while Laundry & CSSD takes care of laundry services and the Central Sterile Services
+                Department. The Catering department provides food services for patients and staff, and the Social Welfare department addresses the social needs of patients. The Mortuary manages mortuary services, and the Environment department ensures
+                a clean and safe hospital environment.
             </p>
         </div>
-        <div class="governance-image">
-            <img src="../images/boardmeeting.jpg" alt="Image of hospital board meeting">
+
+    </section>
+    <section class="cont bg-light">
+        <div>
+            <p>
+
+                The <strong>Clinical Coordinator</strong> also reports to the Medical Director and is responsible for the clinical operations of the hospital. This role includes overseeing the Clinical Heads of Departments, who lead various clinical departments.
+                The Clinical Coordinator also manages the medical workforce, which includes medical staff, house officers (interns), and medical students, ensuring that clinical services are delivered efficiently and effectively. <br> The <strong>Head of Pharmacy</strong>                reports to the Medical Director and oversees the Pharmacy and Dispensary Staff. This team is responsible for medication management and pharmaceutical services, ensuring that patients receive the correct medications in a timely manner and
+                that all pharmaceutical operations comply with regulatory standards. <br> The <strong>Head of Nursing</strong> also reports to the Medical Director and manages the nursing department. This includes Ward In-Charges, who lead different nursing
+                wards, and the nursing workforce, which comprises nursing staff, midwives, auxiliary staff, and nursing students. The Head of Nursing ensures that all nursing services are delivered with the highest standards of care and professionalism.
+                <br> Lastly, the <strong>Head of Finance</strong> reports to the Medical Director and supervises the finance staff. This department is responsible for the hospital's financial operations, including budgeting, accounting, and financial
+                planning. By managing the hospital’s finances effectively, the Head of Finance ensures that the hospital remains financially stable and capable of providing high-quality healthcare services.</p>
         </div>
     </section>
 
@@ -46,43 +75,67 @@
         <div class="structure-container">
             <!-- Top-Level Role -->
             <div class="role top-level">
-                <h3>Chief Executive Officer (CEO)</h3>
-                <p>Dr. [Name]</p>
+                <h3>Medical Director</h3>
             </div>
 
             <div class="middle-level-container">
                 <!-- Middle-Level Roles -->
                 <div class="role middle-level">
-                    <h3>Chief Medical Officer (CMO)</h3>
-                    <p>Dr. [Name]</p>
+                    <h3>Internal Audit</h3>
                 </div>
+
                 <div class="role middle-level">
-                    <h3>Chief Financial Officer (CFO)</h3>
-                    <p>Ms. [Name]</p>
-                </div>
-                <div class="role middle-level">
-                    <h3>Chief Nursing Officer (CNO)</h3>
-                    <p>Dr. [Name]</p>
+                    <h3>Human Resource Management</h3>
                 </div>
             </div>
 
             <div class="lower-level-container">
                 <!-- Lower-Level Roles -->
-                <div class="role lower-level">
-                    <h3>Head of Surgery</h3>
-                    <p>Dr. [Name]</p>
+                <div class="role lower-level" style="padding-left: 5%; padding-right:5%; height:min-content">
+                    <h3>Hospital Administrator <br>(Head of HASS)</h3>
+                    <p><button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-info">Estates</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-danger">Transport</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-success">Procurement & Stores</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">Laundry & CSSD</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Catering</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-info">Social Welfare</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-danger">Mortuary</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-success">Environment</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">Security</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">HIO/RECORDS</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">IT</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Telephone Exchange</button></p>
                 </div>
-                <div class="role lower-level">
-                    <h3>Head of Radiology</h3>
-                    <p>Dr. [Name]</p>
+                <div class="role lower-level" style="padding-left: 5%; padding-right:5%;height:min-content">
+                    <h3>Clinical Coordinator</h3>
+                    <p><button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">Clinical, Heads Of Department</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Medical Staff<button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">House Officers</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Student</button></p>
+                    </button>
+                    </p>
                 </div>
-                <div class="role lower-level">
-                    <h3>Head of Pediatrics</h3>
-                    <p>Dr. [Name]</p>
+                <div class="role lower-level" style="padding-left: 5%; padding-right:5%; height:min-content">
+                    <h3>Head Of Pharmacy</h3>
+                    <p><button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Pharmacy And Dispensary Staff</button></p>
                 </div>
-                <div class="role lower-level">
-                    <h3>Head of Administration</h3>
-                    <p>Mr. [Name]</p>
+                <div class="role lower-level" style="padding-left: 5%; padding-right:5%; height:min-content">
+                    <h3>Head of Nursing</h3>
+                    <p>
+
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-info">Ward In-Charges</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-danger">Nursing Staff</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px" class="bg-success">Midwives</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:#00509e">Auxiliary Staff</button>
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Rotation/Student</button>
+                    </p>
+                </div>
+                <div class="role lower-level" style="padding-left: 5%; padding-right:5%;height:min-content">
+                    <h3>Head of Finance</h3>
+                    <p>
+
+                        <button style="border-radius: 5px; margin-bottom:5px; width:100%;padding:5px; background-color:azure">Finance Staff</button>
+
+                    </p>
                 </div>
             </div>
         </div>

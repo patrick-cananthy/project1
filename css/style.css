@@ -21,7 +21,7 @@
     }
     
     .navbar .nav-item a {
-        color: rgb(4, 0, 255);
+        color: #00509e;
     }
     
     .navbar .nav-item a:hover {
@@ -34,7 +34,7 @@
     }
     
     .dropdown-menu a.dropdown-item {
-        color: rgb(4, 0, 255);
+        color: #00509e;
     }
     
     .dropdown-menu a.dropdown-item:hover {
@@ -42,9 +42,9 @@
         color: rgba(30, 82, 10, 0.959);
     }
     
-    .dropdown-menu.sub-menu-right {
-        left: 65% !important;
-        top: 10% !important;
+    .dropdown-menu sub-menu-right {
+        left: 75%;
+        top: 10%;
         background-color: #fff;
     }
     
@@ -406,6 +406,20 @@
         .about p {
             text-align: justify;
         }
+        .caros {
+            margin-top: 0%;
+        }
+        .caros img {
+            height: 50%;
+        }
+        .navbar img {
+            padding-left: 5%;
+        }
+        .footer-col {
+            padding: 5% !important;
+            width: 100% !important;
+            margin-bottom: 30px !important;
+        }
     }
     
     @media (min-width: 992px) {
@@ -449,8 +463,8 @@
             text-align: right;
         }
         .footer-col {
-            padding: 5%;
-            width: 100%;
+            padding: 0%;
+            width: 30%;
             margin-bottom: 30px;
         }
         .news-cards {

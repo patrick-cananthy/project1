@@ -1,96 +1,96 @@
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none !important;
-  text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 .senior-management {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
 }
 
 .senior-management h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #00509e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00509e;
 }
 
 .senior-management p {
-  font-size: 1.1em;
-  margin-bottom: 40px;
-  color: #555;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #555;
 }
 
 .management-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .management-card {
-  width: calc(33.33% - 20px);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .management-card:hover {
-  transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .management-card img {
-  width: 100%;
-  height: auto;
-  max-width: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .management-card h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #333;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
 }
 
 .management-card .title {
-  font-size: 1.1em;
-  color: #00509e;
-  margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #00509e;
+    margin-bottom: 10px;
 }
 
 .management-card .description {
-  font-size: 0.95em;
-  color: #666;
-  line-height: 1.5;
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .management-card {
-    width: calc(50% - 20px);
-  }
+    .management-card {
+        width: calc(50% - 20px);
+    }
 }
 
 @media (max-width: 480px) {
-  .management-card {
-    width: 100%;
-  }
+    .management-card {
+        width: 100%;
+    }
 }
