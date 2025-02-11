@@ -1,119 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none !important;
-  text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
 }
 
-
 body {
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 .about-header {
-  text-align: center;
-  padding: 10px;
-  color: rgb(51, 51, 51);
+    text-align: center;
+    padding: 10px;
+    color: rgb(51, 51, 51);
 }
 
 .about-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
-
 
 
 /* History Overview Section */
+
 .history-overview {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  gap: 20px;
-  background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: #ffffff;
+}
+
+.history-overview p {
+    text-align: justify;
 }
 
 .history-content {
-  flex: 1;
+    flex: 1;
 }
 
 .history-image {
-  flex: 1;
+    flex: 1;
 }
 
 .history-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
+
 /* Timeline Section */
+
 .timeline {
-  background-color: #e9ecef;
-  padding: 40px 20px;
-  text-align: center;
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .timeline h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .timeline-event {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .timeline-event h3 {
-  font-size: 1.4em;
-  color: #00509e;
-  margin-bottom: 8px;
+    font-size: 1.4em;
+    color: #00509e;
+    margin-bottom: 8px;
 }
 
 .timeline-event p {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
+
 /* Legacy Section */
+
 .legacy {
-  padding: 40px 20px;
-  text-align: center;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .legacy h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .legacy p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
+
 /* Responsive Design */
+
 @media (max-width: 768px) {
-  .history-overview {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .history-image,
-  .history-content {
-    max-width: 100%;
-  }
-
-  .about-header h1 {
-    font-size: 2em;
-  }
-
-  .about-header p {
-    font-size: 1em;
-  }
+    .history-overview {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-image,
+    .history-content {
+        max-width: 100%;
+    }
+    .about-header h1 {
+        font-size: 2em;
+    }
+    .about-header p {
+        font-size: 1em;
+    }
 }
