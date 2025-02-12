@@ -29,7 +29,7 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("../include/header.html")
+    fetch('../include/header.html')
         .then(response => response.text())
         .then(data => document.getElementById("navbar").innerHTML = data);
 });
@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => document.getElementById("foot").innerHTML = data);
 });
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("../include/slider.html")
+    fetch("include/slider.html")
         .then(response => response.text())
         .then(data => document.getElementById("slider").innerHTML = data);
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("../include/headerr.html")
+    fetch("include/headerr.html")
         .then(response => response.text())
         .then(data => document.getElementById("header").innerHTML = data);
 });
